@@ -13,5 +13,7 @@ urlpatterns=patterns('phyrosite.home.views',
     url(r'^blog/$', 'blog'),
     url(r'^team/$', 'team'),
     url(r'^clientes/$', 'clients'),
+    url(r'^hackers-and-devs-tehuacan', 'hack_and_devs'),
+    
 
 )

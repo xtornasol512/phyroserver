@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Phyro Server Agencia de Desarrollo Web Tehuacán{%endblock title%}</title>
+
+    <link rel="canonical" href="{% block rel_canonical%}{% endblock rel_canonical%}" />
+    <meta name="description" content="{% block descripcion %}{% endblock descripcion %}" >
+    <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
+    <meta property="fb:app_id" content="{%block fb_app_id%}504922086287468{% endblock fb_app_id%}" />
+    <meta property="og:type" content="{%block og_type%}website{%endblock og_type%}" /> 
+    <meta property="og:title" content="{% block og_title %}Phyro Server Tehuacán{% endblock og_title %}">
+    <meta property="og:url" content="{%block og_url%}{% endblock og_url%}" /> 
+    <meta property="og:description" content="{% block og_descripcion %}{% endblock og_descripcion %}">
+    <meta property="og:image" content="{% block og_img %}{% endblock og_img %}">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/foundation.css" />
+    <link rel="stylesheet" href="{{STATIC_URL}}css/foundation-icons.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}dist/css/phyrostyles.css">
+    <script src="{{STATIC_URL}}js/vendor/modernizr.js"></script>
+    <!-- Apple Icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="{{STATIC_URL}}img/icons/startup-retina.png">
+    <link rel="shortcut icon" href="{{STATIC_URL}}img/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{STATIC_URL}}img/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{STATIC_URL}}img/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{STATIC_URL}}img/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{STATIC_URL}}img/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{STATIC_URL}}img/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{STATIC_URL}}img/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{STATIC_URL}}img/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{STATIC_URL}}img/icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="{{STATIC_URL}}img/icons/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="{{STATIC_URL}}img/icons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="{{STATIC_URL}}img/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{STATIC_URL}}img/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{STATIC_URL}}img/icons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileImage" content="{{STATIC_URL}}img/icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="{{STATIC_URL}}img/icons/browserconfig.xml">
+
+
+    <link rel="author" href="{%block rel_author%}{%endblock rel_author%}" />
+
+    <link rel="author" href="/humans.txt" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  </head>
+  <body>
+
+    {% block facebook_sdk %}{% endblock facebook_sdk %}
+    {% block contenido_base %}{% endblock contenido_base %}
+
+    <!-- Javascript Vendor y de APpjs-->
+    <script src="{{STATIC_URL}}js/vendor/jquery.js"></script>
+    <script src="{{STATIC_URL}}js/foundation.min.js"></script>
+    <script src="{{STATIC_URL}}js/vendor/jquery.cookie.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="{{STATIC_URL}}js/codigo.js"></script>
+    <!-- mas Javascript despues de inicializar-->
+    {%block morejs%} {%endblock morejs%}
+    <!-- Google Analytics Here-->
+    {% block analytics%}{% endblock analytics%}
+  </body>
+</html>

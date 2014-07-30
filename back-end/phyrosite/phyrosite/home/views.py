@@ -42,8 +42,5 @@ def twitter(request):
 def facebook(request):
     return redirect301('https://www.facebook.com/pages/Fenix-Fight-Club-Mexico/215447585145328?fref=ts')
 
-def youtube(request):
-    return redirect('https://www.youtube.com/user/strmrzl')
-
 def foursquare(request):
     return redirect('https://es.foursquare.com/v/fenix-fight-club-m%C3%A9xico/4faeb42ee4b0085e227a6b34')
