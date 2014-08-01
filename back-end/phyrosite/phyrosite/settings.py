@@ -67,15 +67,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-STATIC_URL = '/static/'
 
-current_dir =  os.path.abspath(os.path.dirname(__file__))
-parent_dir = os.path.abspath(current_dir + "/../../../")
-
-STATICFILES_DIRS = (
-    #os.path.join(os.path.dirname(__file__),'static'),
-    os.path.join(parent_dir,'front-end'),
-)
 #'''
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__),'templates'),
