@@ -9,6 +9,7 @@ from django.http import HttpResponsePermanentRedirect as redirect301
 # Create your views here.
 #Dicccionario ejemplo
 my_data_dict= {'hola':"fatima"}
+meta_keywords = 'PhyroServer, responsive'#key que tendran todas las view
 
 """
 =====DIRECTORIO PRINCIPAL===========
