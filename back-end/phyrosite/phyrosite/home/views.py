@@ -16,9 +16,14 @@ meta_keywords = 'PhyroServer, responsive'#key que tendran todas las view
 """
 
 def index_view(request):
+    descripcion = "pagina principal de phyroserver, agencia de desarrollo web y marketin online"
+    titulo = "Agencia de Desarrollo Web Tehuacán"
+    keywords = meta_keywords+''
+    ctx={'meta_description':descripcion, 'meta_keywords':keywords,
+         'meta_titulo':titulo}
     
-    return render_to_response('home/index.html',
-                          my_data_dict,
+    return render_to_response('home/contenido.html',
+                          ctx,
                           context_instance=RequestContext(request))
 #Privacidad
 def terminos(request):

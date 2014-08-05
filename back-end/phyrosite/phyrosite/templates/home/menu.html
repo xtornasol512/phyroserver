@@ -1,1 +1,83 @@
 {% extends "base_variables.html" %}
+{% block contenido_base %}
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar show-for-medium-down">
+          <section class="left tab-bar-section">
+            <h1 class="title"><a href="/"><img width="50" height="36" src="{{STATIC_URL}}img/base/logo-db.png" alt="Logo Phyro Server"> </a><strong>Phyro </strong>Server</a></h1>
+          </section>
+
+          <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section>
+        </nav>
+        <nav class="top-bar hide-for-medium-down" data-topbar="">
+          <ul class="title-area">
+          <li class="name">
+            <h1><a href="/" data-dropdown="drop1" class="dropdow" data-options="is_hover:true"><img width="50" height="35" src="{{STATIC_URL}}img/base/logo-retina.png" alt="Logo Phyro Server"><strong>Phyro </strong>Server</a></h1>
+          </li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class="right">
+              <li class="divider"></li>
+              <li class="has-dropdown not-click {%if actEc%}active{%endif%}">
+                <a href="/ecommerce">ecommerce</a>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown not-click {%if actRe%}active{%endif%}">
+                <a href="/responsive" class="">responsive</a>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown not-click {%if actSU%}active{%endif%}">
+                <a href="/startUp" class="">startUp</a>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown not-click {%if actCl%}active{%endif%}">
+                <a href="/clientes" class="">clientes</a>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown not-click {%if actCo%}active{%endif%}">
+                <a href="/contacto" class="">contacto</a>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown not-click {%if actTe%}active{%endif%}">
+                <a href="/team" class="">Team</a>
+                <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Regresar</a></h5></li>
+                  <li><a href="/alen">Alen</a></li>
+                  <li><a href="/fatima">Fatima</a></li>
+                  <li><a href="/jesus">Jesus</a></li>
+                  <li><a href="/luciano">Luciano</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              </ul>
+            </section></nav>
+
+        <aside class="right-off-canvas-menu">
+          <ul id="menuMovil" class="off-canvas-list">
+            <li id="logo-menu">
+              <div class="panel">
+                <a href="/" class="text-center logo_menu"><img width="98" height="70" src="{{STATIC_URL}}img/base/logo-menu.png" alt="Logo Phyro Server" class="rotarY"></a>
+                <h5 class="text-center fenix"><strong>Phyro </strong>Server</h5>
+                <p class="text-center">"Nadie logra grandes metas quedandose quieto"</p>
+              </div>
+            </li>
+            <li><a href="/ecommerce"><i class="fi-trophy"></i>ecommerce</a></li>
+            <li><a href="/responsive"><i class="fi-torsos-all"></i>responsive</a></li>
+            <li><a href="/marketing-online"><i class="fi-star"></i>marketing-online</a></li>
+            <li><a href="/startUp"><i class="fi-clock"></i>startUp</a></li>
+            <li><a href="/clientes"><i class="fi-mail"></i>clientes</a></li>            
+            <li><a href="/contacto"><i class="fi-sheriff-badge"></i>contacto</a></li>
+            <li><a href="/team"><i class="fi-paw"></i>team</a></li>
+            
+          </ul>
+        </aside>
+        <section class="main-section">
+          {% block contenido %}{% endblock contenido %}
+          {% block footer %}{% endblock footer%}
+        </section>
+      <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+{% endblock%}
