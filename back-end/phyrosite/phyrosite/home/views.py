@@ -22,7 +22,7 @@ def index_view(request):
     ctx={'meta_description':descripcion, 'meta_keywords':keywords,
          'meta_titulo':titulo}
     
-    return render_to_response('landing/home.html',
+    return render_to_response('landing/landing2/home.html',
                           my_data_dict,
                           context_instance=RequestContext(request))
 #Privacidad
