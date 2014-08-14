@@ -1,6 +1,8 @@
 *~
 *.pyc
 *.db
+front-end/temp/
+back-end/temp/
 temp/
 node_modules/
 back-end/phyrosite/phyrosite/settings_local.py

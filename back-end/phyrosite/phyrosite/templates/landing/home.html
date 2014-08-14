@@ -1,0 +1,62 @@
+{% extends "landing/base_analytics.html" %}
+{% block title %}{% block og_title %}Phyro Server{% endblock %}{% endblock %}
+{% block rel_canonical%}{% block og_url %}http://phyroserver.com{%endblock%}{%endblock%}
+{% block og_type%}website{%endblock%}
+{% block descripcion %}{% block og_descripcion %}Agencia de Desarrollo Web y Mkt Dígital. El lugar donde se desarrollan tus ideas: Creamos tu nueva tienda online, damos vida a tu proyecto digital o te ayudamos a cambiar al mundo con tu startup. {% endblock %} {% endblock %}
+{% block keywords %}Diseño y Desarrollo Web, Marketing Online, UX, UI, Asesorias{% endblock %}
+{% block morecss %}
+<link rel="stylesheet" href="{{STATIC_URL}}landing/css/miestilo.css">
+{% endblock morecss %}
+<!-- body-->
+{% block contenido %}
+<div id="container" class="container intro-effect-push">
+            <!-- Top Navigation -->
+            <div class="codrops-top clearfix">
+                <a class="codrops-icon codrops-icon-prev" href="/contacto"><span>Contactanos</span></a>
+                <span class="right"><a class="codrops-icon codrops-icon-drop" href="/team"><span>TEAM</span></a></span>
+            </div>
+            <header class="header">
+                <div class="bg-img"><img src="{{STATIC_URL}}landing/img/7.jpg" alt="Background Image"/></div>
+                <div class="title">
+                    <nav class="codrops-demos">
+                        <a class="current-demo" href="index.html">Home</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/ecommerce">Ecommerce</a>
+                        <a href="/responsive">Desarrollo Web</a>
+                        <a href="/marketing-online">Mkt Online</a>
+                        <a href="/startUp">StartUps</a>
+                        <a href="/clientes">Clientes</a>
+                    </nav>
+                    <h1>Phyro Server | Damos vida a tu idea</h1>
+                </div>
+            </header>
+            <button class="trigger" data-info="Click to see the header effect"><span>Trigger</span></button>
+            <div class="title">
+                <nav class="codrops-demos">
+                        <a class="current-demo" href="index.html">Home</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/ecommerce">Ecommerce</a>
+                        <a href="/responsive">Desarrollo Web</a>
+                        <a href="/marketing-online">Mkt Online</a>
+                        <a href="/startUp">StartUps</a>
+                        <a href="/clientes">Clientes</a>
+                    </nav>
+                <h1> Phyro Server Agencia de Desarrollo Web y Mkt Dígital </h1>
+                <p class="subline">Inspirados en mostrar al mundo tu idea</p>
+                <p>somos un <a href="/team"><strong>Equipo creativo</strong></a> &#8212; Ubicado en  <a href="/contacto"><strong>Tehuacán</strong> <strong>Puebla. México.</strong></a></p>
+            </div>
+            <article class="content">
+                <div>
+                    
+
+                    <blockquote>Pinchi Chano</blockquote>
+
+                </div>
+            </article>
+
+        </div><!-- /container -->
+
+{%endblock%}
+{% block customjs %}
+<script src="{{STATIC_URL}}landing/js/home.js"></script>
+{% endblock %}

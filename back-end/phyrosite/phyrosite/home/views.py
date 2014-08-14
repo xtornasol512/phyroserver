@@ -22,8 +22,8 @@ def index_view(request):
     ctx={'meta_description':descripcion, 'meta_keywords':keywords,
          'meta_titulo':titulo}
     
-    return render_to_response('home/contenido.html',
-                          ctx,
+    return render_to_response('landing/home.html',
+                          my_data_dict,
                           context_instance=RequestContext(request))
 #Privacidad
 def terminos(request):
